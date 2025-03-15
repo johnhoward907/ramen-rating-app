@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Rater</title>
+    <link rel="stylesheet" href="/ramen-rating-app/style.css">
+</head>
+<body>
+    <h1>Ramen Rater</h1>
+
+    <!-- Ramen Menu -->
+    <div id="ramen-menu"></div>
+
+    <!-- Ramen Detail -->
+    <div id="ramen-detail">
+        <img id="ramen-image" src="/ramen-rating-app/images/shoyu.jpg" alt="Ramen Image">
+        <h2 id="ramen-name">Insert Name Here</h2>
+        <h3 id="ramen-restaurant">Insert Restaurant Here</h3>
+        <p>Rating: <span id="ramen-rating">Insert rating here</span> / 10</p>
+        <p>Comment: <span id="ramen-comment">Insert comment here</span></p>
+    </div>
+
+
+    <!-- New Ramen Form -->
+    <form id="new-ramen-form">
+        <h3>Add New Ramen</h3>
+        <label>Name:</label> <input type="text" id="new-name"><br>
+        <label>Restaurant:</label> <input type="text" id="new-restaurant"><br>
+        <label>Image:</label> <input type="text" id="new-image"><br>
+        <label>Rating:</label> <input type="number" id="new-rating" min="1" max="10"><br>
+        <label>Comment:</label> <input type="text" id="new-comment"><br>
+        <button type="submit">Create</button>
+    </form>
+       <!--editable fields and a delete button-->
+   <div id="ramen-detail">
+    
+
+    <button id="delete-button">Delete Ramen</button>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
